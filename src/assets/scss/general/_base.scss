@@ -1,0 +1,30 @@
+* {
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    border-radius: 30px;
+    min-width: 375px;
+    
+ 
+} 
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding:  0px 20px;
+    margin: 0 auto;
+   
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+

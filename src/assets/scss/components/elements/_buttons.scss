@@ -1,0 +1,10 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $mainColor;
+    font-weight: 500;
+    line-height: normal;
+    color: $textcolorMain;
+    border-radius:100px;
+}

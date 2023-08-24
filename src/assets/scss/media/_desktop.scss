@@ -1,0 +1,32 @@
+@media (min-width: 1180px) {
+   body {
+    width: 100%;
+   }
+     .container {
+        max-width: 1440px;
+        padding: 0;
+
+     }
+     .header {
+        .burger {
+            display: none;
+        }
+        &__logo {
+            img {
+                width: 43px;
+                height: 43px;
+            }
+            div {
+                font-size: 23px;
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+        &__btn {
+            display: flex;
+            margin-left: 61.75px;
+        }
+     }
+  
+}

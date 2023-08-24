@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 16.74px;
+   &__text {
+    margin-left: 5.6px;
+    color: $textcolorMain;
+    font-family: Candal;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */ 
+    span {
+         margin-left: -3px;
+        color: $mainColor;
+        font-family: Candal;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 25px; /* 192.308% */
+        background: #000;
+    }
+   }
+  
+}
