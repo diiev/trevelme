@@ -7,4 +7,26 @@
     line-height: normal;
     color: $textcolorMain;
     border-radius:100px;
+    
+
+    &__whatsapp {
+        background: #4CAF50;
+       img {
+        width: 23px;
+        height: 23px;
+        margin-right: 11.25px;
+        vertical-align: middle;
+       
+       }
+    }
+    &__telegram {
+    
+        background: #039BE5;
+        img {
+           
+            vertical-align: middle;
+            margin-right: 18.17px;
+           
+           }
+    }
 }

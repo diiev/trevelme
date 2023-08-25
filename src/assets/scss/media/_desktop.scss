@@ -8,18 +8,24 @@
 
      }
      .header {
+      
         .burger {
             display: none;
         }
         &__logo {
+            margin-left: 2px;
+            margin-top: 6px;
             img {
                 width: 43px;
                 height: 43px;
             }
             div {
+                margin-left: 6.6px;
+                margin-top: -1px;
                 font-size: 23px;
                 span {
                     font-size: 17px;
+                    margin-left: -6px;
                 }
             }
         }
@@ -27,6 +33,142 @@
             display: flex;
             margin-left: 61.75px;
         }
+        &__heart {
+            width: 50px;
+            height: 50px; 
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &__login {
+            width: 114.25px;
+            height: 50px;
+            font-size: 15px;
+            margin-left: 20px;
+        }
      }
-  
+     .menu {
+        display: block;
+        &__item {
+            &:hover {
+                .tolip {
+                    opacity:1;
+                    visibility: visible;
+                    z-index: 99;
+                    
+                }
+            }
+        }
+     }
+     
+     .main-title {
+        font-size: 42px;
+        line-height: 52px;
+     }
+     .title {
+        font-size: 36px;
+     }
+     .home {
+        padding-top: 31px;
+
+        &__container {
+            margin: 0 auto;
+        }
+        &__title {
+            padding: 123.07px 445px 0 445px;
+        }
+        &__descr {
+            font-size: 16px;
+            margin-top: 9px;
+        }
+        &__form {
+            width: 779px;
+            height: 75px;
+            display: flex;
+            padding: 0;
+            align-items: center;
+            margin: 44px auto 0 auto;
+
+            
+        }
+        &__input {
+            
+            input {
+                width: 200px;
+            }
+            &-choise {
+                margin-left: 23px;
+            }
+            &-date {
+                margin-left:30px;
+            }
+        } 
+        &__divider {
+            width: 1px;
+            height: 36.922px;
+            margin-left: 14px;
+        }
+        &__btn {
+            margin-top: 0;
+            margin-left: 56px;
+            width: 134px;
+            height: 55px;
+            flex-shrink: 0;
+            
+        }
+        &__popular {
+            margin: 128.01px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            &-items {
+                margin: 0;
+                padding: 0;
+                gap: 15px;
+                padding-bottom: 60.01px;
+            }
+            &-title {
+                margin-left: 58px;
+                margin-right: 17px;
+            }
+            &-item {
+                background: transparentize($textcolorMain, 0.85);
+            }
+        }
+     }
+     .popular {
+        &__title {
+            margin-top: 17px;
+          }
+        &__descr {
+            font-size: 16px;
+            margin-top: 17px;
+          }
+         
+          &__cards {
+            margin-top: 60px;
+            grid-template-columns: 449.365px 449.365px 449.365px;
+            column-gap: 46px;
+            row-gap: 45px;
+          }
+          &__card {
+            padding: 366.58px 0 38.46px 43.94px;
+            &-text {
+               
+                font-size: 22px;
+            }
+            &-btn {
+              
+                margin-top: 24px;
+                width: 131.42px;
+                height: 34.398px;
+                font-size: 13px;
+            }
+          }
+
+          
+     }
+     .daystour {
+        display: none;
+     }
 }

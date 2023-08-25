@@ -1,0 +1,85 @@
+.menu {
+    display: none;
+    margin-left: 49.92px;
+    &__items {
+        display: flex;
+        gap: 55.5px;
+        
+    } 
+    &__item {
+        position: relative;
+        &-arrow {
+            margin-left: 5.1px;
+            margin-top: 10px;
+        }
+    
+    }
+    &__link {
+        color: $textcolorMain;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px; 
+    }
+    .tolip {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -99;
+        transition: all .3s ease-out;
+        width: 388.078px;
+        height: 170px;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 7px 100px 0px rgba(0, 0, 0, 0.15);
+        padding: 17px 23px 22px 27.08px; 
+        &__wrapper {
+            padding-top: 18px;
+            position: absolute;
+            width: 100%;
+        }
+        a {  
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px; 
+        }
+        &__text {
+            color: #000;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        &__social {
+            margin-top: 14.38px;
+            display: flex;
+            gap: 14px;
+        }
+        &__btn {
+            width: 162px;
+            height: 50px;
+            color: #FFF;
+          
+            
+        }
+        &__contacts {
+            margin-top: 14.62px;
+           
+            a {
+                color: #000;
+            }
+
+        }
+        &__phone {
+            margin-right: 25px;
+            img {
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        }
+        &__email {
+           img {
+            margin-right: 9px;
+            vertical-align: middle;
+           }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.home {
+    padding-top: 23.56px;
+
+    &__container {
+    background: url('../img/home/home_bg.jpg')  7% / cover no-repeat;
+    border-radius: 20px;
+    margin: 0 20px;
+ }
+   &__title {
+      padding-top: 44.91px;
+   }
+   &__swoosh {
+    display: block;
+    margin: -3px auto 0 auto;
+   }
+   &__descr {
+    color: $textcolorMain;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-top: -10px;
+   }
+
+   &__form {
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 42px 80px 0px rgba(0, 0, 0, 0.25);
+        padding: 15.12px 22.31px 17.06px 21.31px;
+        margin: 20.99px auto 0 auto;
+   }    
+     &__input {
+
+        display: flex;
+        align-items: center;
+        gap: 14.79px;
+          img {
+                border: 1px solid #DBDBDB;
+                border-radius:100%;
+               
+            }
+
+            &-pin {
+               
+                padding: 10.6px 9.46px 8.96px 9.46px;   
+            }
+            &-calendar {
+                padding: 12.04px 11.21px 11.88px 11.71px;   
+            }
+           
+          
+           
+        input {
+            color: #7B7B7B;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: normal;
+        border:none;
+        outline: none;
+        width: 100%;
+        
+        }
+     }
+     &__divider {
+        margin-top: 10.55px;
+        margin-bottom: 5.55px;
+       
+        height: 1px;
+        background: #EBEBEB;
+     }
+   &__btn {
+    margin-top: 11.81px;
+    height: 55px;
+    img {
+        margin-right: 11.39px;
+    }
+   } 
+
+   &__popular {
+    margin-top: 77.93px;
+    text-align: center;
+    &-title {
+        color: $textcolorMain;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px; /* 178.571% */
+    }
+    &-items {
+        margin: 10.07px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 35.16px;
+        
+        
+    }
+    &-item {
+        border-radius: 30px;
+        color: #fff;
+        background: transparentize($textcolorMain, 0.66);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        padding: 6.5px 14.5px 9px 14.5px;
+        margin-bottom: 11.5px;
+        margin-right: 15px;
+      
+
+    }
+   }
+}
