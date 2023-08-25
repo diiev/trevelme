@@ -11,8 +11,42 @@
             margin-bottom: 7.85px;
         }
     }
-    &__city {
+   
+    &__select {
+        display: none;
+    }
+    &__dateselect {
+        display: none;
+        margin-left: -16px;
+    }
+    &__date {
         &-select {
+            position: relative;
+            display: none;
+            width: 241px;
+                padding: 13.91px 22.75px;
+                color: #B7B7B7;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                border-radius: 10px;
+                border: 1px solid #E6E6E6;
+                background: #FFF;
+                &:after {
+                    background-image: url('../img/icons/calendar-tour.svg');
+                    width: 15px;
+                    height: 15px;
+                    margin-right: -6px;
+                    transform: rotate(0deg) !important;
+                    
+                  
+                  }
+                  
+        }
+    }
+    &__city {
+        margin-top: 26px;
+        &-cities {
             width: 131.75px;
             height: 45px;
             flex-shrink: 0;
@@ -22,10 +56,16 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 26px; /* 185.714% */
-            padding: 8.91px 0 11.09px 0;
+            padding: 8.91px  16.75px 10.09px 14.75px;
             border:none;
             outline: none;
             text-align: center;
+            justify-content: start;
+            &::after {
+                margin-left: auto;
+                margin-right: -1px;
+                margin-top: 2px;
+            }
         }
     }
     &__date {
@@ -61,7 +101,9 @@
     column-gap: 20.69px;
     row-gap: 22.09px;
    }
-  
+   &__cardhour {
+    margin-top: 11px;
+   }
    &__card {
     position: relative;
     &-wrapper {
@@ -129,8 +171,9 @@
             
         }
     }
+    
     &-hour {
-        display: block;
+        display: flex;
         margin: 10.19px auto 0 auto;
         width: 133.291px;
         height: 33.82px;
@@ -141,6 +184,13 @@
         border-radius: 1000px;
         outline: none;
         padding-left: 14.21px;
+        background: #fff;
+        justify-content: start;
+        &::after {
+            margin-left: auto;
+            margin-right: 14px;
+            margin-top: 3px;
+        }
     }
     &-btn {
         margin: 8.06px auto 0 auto;
@@ -154,7 +204,6 @@
             height: 46px;
             background: #E9E9E9;
             border-radius: 100px;
-            display: flex;
             justify-content: center;
             align-items: center;
         }

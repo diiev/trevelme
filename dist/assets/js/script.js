@@ -218,6 +218,12 @@ const select = () => {
   }
   ItcCustomSelect.hideOpenSelect();
   const select1 = new ItcCustomSelect('#select_city');
+  const select2 = new ItcCustomSelect('#tours__dateselect');
+  const select3 = new ItcCustomSelect('#tours__city');
+  const select4 = document.querySelectorAll("#tours__cardhour");
+  select4.forEach(select => {
+    new ItcCustomSelect(select);
+  });
 };
 /* harmony default export */ __webpack_exports__["default"] = (select);
 

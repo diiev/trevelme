@@ -134,9 +134,9 @@
                     <h2 class="title tours__title">Экскурсии</h2>
                      <div class="tours__filters">
                         <!-- Изначально не активна ни одна опция -->
-            <div class="itc-select " id="select_city">
+            <div class="itc-select tours__select " id="select_city">
                 <!-- Кнопка для открытия выпадающего списка -->
-                <button type="button" class="itc-select__toggle tours__select-city" name="car" value="" data-select="toggle" data-index="-1">Выберите город</button>
+                <button type="button" class="itc-select__toggle tours__select-city" name="city" value="" data-select="toggle" data-index="-1">Выберите город</button>
                 <!-- Выпадающий список -->
                 <div class="itc-select__dropdown">
                   <ul class="itc-select__options">
@@ -146,16 +146,37 @@
                     <li class="itc-select__option" data-select="option" data-value="Калерия" data-index="3">Калерия</li>
                   </ul>
                 </div>
+              </div> 
+              <div class="itc-select tours__dateselect " id="tours__dateselect">
+                <!-- Кнопка для открытия выпадающего списка -->
+                <button type="button" class="itc-select__toggle tours__date-select" name="date" value="" data-select="toggle" data-index="-1">Выберите дату</button>
+                <!-- Выпадающий список -->
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option" data-select="option" data-value="03.09.2023" data-index="0">03.09.2023</li>
+                    <li class="itc-select__option" data-select="option" data-value="03.09.2023" data-index="1">03.09.2023</li>
+                    <li class="itc-select__option" data-select="option" data-value="03.09.2023" data-index="2">03.09.2023</li>
+                    <li class="itc-select__option" data-select="option" data-value="03.09.2023" data-index="3">03.09.2023</li>
+                  </ul>
+                </div>
               </div>
-              <div class="tours__date-input"><input placeholder="Выберите дату" type="date"></div>
-                        <div class="tours__city">
-                            <div class="tours__city-title">Город</div>
-                             <select class="tours__city-select" name="" id="">
-                                <option value="">Все города</option>
-                                <option value="">Дубай</option>
-                                <option value="">Питер</option>
-                             </select>
-                        </div>
+            
+                    
+                            <div class="itc-select tours__city " id="tours__city">
+                                <!-- Кнопка для открытия выпадающего списка -->
+                                <button type="button" class="itc-select__toggle tours__city-cities" name="city" value="" data-select="toggle" data-index="-1">Все города</button>
+                                <!-- Выпадающий список -->
+                                <div class="itc-select__dropdown">
+                                  <ul class="itc-select__options">
+                                    <li class="itc-select__option" data-select="option" data-value="Все города" data-index="0">Все города</li>
+                                    <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">Казань</li>
+                                    <li class="itc-select__option" data-select="option" data-value="Санкт-Петербург" data-index="2">Санкт-Петербург</li>
+                                    <li class="itc-select__option" data-select="option" data-value="Дубай" data-index="3">Дубай</li>
+                                    <li class="itc-select__option" data-select="option" data-value="Калерия" data-index="4">Калерия</li>
+                                  </ul>
+                                </div>
+                              </div> 
+                       
                         <div class="tours__date">
                             <div class="tours__date-title">Дата</div>
                              <input type="text" placeholder="14.08" class="tours__date-in">
@@ -175,11 +196,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽ <em>/</em><span> с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -196,11 +226,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -217,11 +256,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -238,11 +286,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -259,11 +316,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -280,11 +346,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -301,11 +376,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
@@ -322,11 +406,20 @@
                                  <div class="tours__card-inner">
                                     <div class="tours__card-hours">
                                         <div class="tours__card-price">от 2750 ₽  <em>/</em> <span>с чел</span></div>
-                                        <select name="" id="" class="tours__card-hour">
-                                            <option value="">Выбрать время</option>
-                                            <option value="">9:00</option>
-                                            <option value="">14:00</option>
-                                        </select>
+                                        <div class="itc-select tours__cardhour " id="tours__cardhour">
+                                            <!-- Кнопка для открытия выпадающего списка -->
+                                            <button type="button" class="itc-select__toggle tours__card-hour" name="hour" value="" data-select="toggle" data-index="-1">Выбрать время</button>
+                                            <!-- Выпадающий список -->
+                                            <div class="itc-select__dropdown">
+                                              <ul class="itc-select__options">
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="0">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="Казань" data-index="1">13:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="13:00" data-index="2">15:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="15:00" data-index="3">17:00</li>
+                                                <li class="itc-select__option" data-select="option" data-value="14:00" data-index="4">14:00</li>
+                                              </ul>
+                                            </div>
+                                          </div> 
                                      </div>
                                     <div class="btn tours__card-btn">Добавить в заказ</div>
                                     <div class="tours__card-btn_plus"><img src="assets/img/icons/plus.svg" alt=""></div>
