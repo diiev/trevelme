@@ -55,15 +55,23 @@
         }
     }
    &__cards {
+    margin-top: 39.8px;
     display: grid;
     grid-template-columns: 157.31px 157.31px;
     column-gap: 20.69px;
+    row-gap: 22.09px;
    }
+  
    &__card {
-    padding: 0 0 16.9px 0;
-    border-radius: 20px;
-    border: 1px solid #DFDFDF;
     position: relative;
+    &-wrapper {
+        border: 1px solid #DFDFDF;
+        border-radius: 0 0 20px 20px;
+        padding: 0 0 16.9px 0;
+        border-top:none;
+        margin-top: -5px;
+      
+       }
     &-heart {
         width: 23.572px;
         height: 23.572px;
@@ -87,12 +95,11 @@
         height: 97.204px;
     }
     &-title {
-        margin-top: 9.24px;
         color: $textcolorMain;
         font-size: 11px;
         font-weight: 700;
         line-height: 15px; /* 136.364% */
-        padding: 0 6.61px 0 12.36px;
+        padding: 10.24px 6.61px 0 12.36px;
     }
     &-divider {
         margin: 9.47px auto 0 auto;
@@ -101,8 +108,16 @@
         background: #E6E6E6;
 
     }
+    &-descr {
+        display: none;
+        margin-top: 10px;
+        color: #6A6A6A;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */
+    }
     &-price {
-        margin-top: 11.6px;
+        margin-top: 9.6px;
         padding-left: 11.89px; 
         color: #252525;
         font-size: 12px;
@@ -133,6 +148,16 @@
         height: 33.82px;
         border-radius: 1000px;
         font-size: 12px;
+        &_plus {
+            display: none;
+            width: 46px;
+            height: 46px;
+            background: #E9E9E9;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
   
    } 

@@ -171,4 +171,120 @@
      .daystour {
         display: none;
      }
+
+     .tours {
+        padding-top: 86.77px;
+        &__wrapper {
+            display: flex;
+        }
+        &__filters {
+            margin-top: 0;
+            margin-left: 54px;
+        }
+        &__select {
+           
+            &-city {
+                width: 241px;
+                padding: 13.91px 22.75px;
+                color: #B7B7B7;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                border-radius: 10px;
+                border: 1px solid #E6E6E6;
+                background: #FFF;
+            }
+        }
+        
+        &__city {
+            display: none;
+        }
+        &__date {
+            display: none;
+            &-input {
+                margin-left: 29px;
+               input {
+                width: 241px;
+                padding: 13.91px 22.75px;
+                color: #B7B7B7;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                border-radius: 10px;
+                border: 1px solid #E6E6E6;
+                background: #FFF;
+               }
+            }
+        }
+        &__cards {
+            grid-template-columns: repeat(4, 333.677px);
+            column-gap:35.5px;
+            row-gap: 29px;
+            margin-top: 71px;
+
+        }
+        &__card {
+            &-heart {
+                width: 50px;
+                height: 50px;
+                top: 16.01px;
+                right: 16.19px;
+                img {
+                    width: 22px;
+                    height: 22px;           
+                }
+            }
+            &-img {
+                height: 226px;
+            }
+            &-wrapper {
+                padding: 0 26px 19px 26px;
+            }
+            &-title {
+                font-size: 14px;
+                padding: 23px 0 0 0;
+                line-height: 23px;
+            }
+            &-divider {
+                width: 281.781px;
+                margin: 13.47px 0 0 0;
+            }
+            &-inner {
+                display: flex;
+                align-items: center;
+            }
+            &-descr {
+                display: block;
+            }
+            &-price {
+                margin-top: 15.6px;
+                padding-left: 0;
+                font-size: 20px;
+                span {
+                    font-size: 13px;
+                }
+                em {
+                    font-size: 12px;
+                }
+            }
+            &-hour {
+                width: 135px;
+                height: 30px;
+                margin: 9px 0px 0px -5px;
+            }
+            &-btn {
+                display: none;
+                &_plus {
+                    margin-left: auto;
+                    display: flex;
+                    margin-top: 25px;
+                }
+            }
+        }
+        &__btn {
+            width: 194.375px;
+            height: 55px;
+            margin-top: 72px;
+        }
+     }
 }
