@@ -752,7 +752,7 @@ a {
 }
 
 .menu__search-input {
-    width: 334px;
+    width: 100%;
     height: 50px;
     border-radius: 100px;
     background: #F5F5F5;
@@ -1189,6 +1189,7 @@ a {
     grid-template-columns: 157.452px 157.452px;
     column-gap: 20px;
     row-gap: 20px;
+    justify-content: center;
 }
 
 .popular__card {
@@ -1349,6 +1350,7 @@ a {
     margin-top: 39.8px;
     display: grid;
     grid-template-columns: 157.31px 157.31px;
+    justify-content: center;
     column-gap: 20.69px;
     row-gap: 22.09px;
 }
@@ -1938,6 +1940,66 @@ a {
     height: 22.065px;
 }
 
+@media (min-width: 768px) {
+    .popular__cards {
+        grid-template-columns: 157.452px 157.452px 157.452px;
+    }
+
+    .tours__cards {
+        grid-template-columns: 157.31px 157.31px 157.31px;
+    }
+
+    .home__btn {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .popular__cards {
+        grid-template-columns: repeat(3, 220px);
+    }
+
+    .tours__cards {
+        grid-template-columns: repeat(3, 200px);
+    }
+
+    .home__form {
+        width: 779px;
+        height: 75px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        margin: 44px auto 0 auto;
+    }
+
+    .home__input input {
+        width: 200px;
+    }
+
+    .home__input-choise {
+        margin-left: 23px;
+    }
+
+    .home__input-date {
+        margin-left: 30px;
+    }
+
+    .home__divider {
+        width: 1px;
+        height: 36.922px;
+        margin-left: 14px;
+    }
+
+    .home__btn {
+        margin-top: 0;
+        margin-left: 56px;
+        width: 134px;
+        height: 55px;
+        flex-shrink: 0;
+    }
+}
+
 @media (min-width: 1440px) {
     body {
         width: 100%;
@@ -2038,41 +2100,6 @@ a {
     .home__descr {
         font-size: 16px;
         margin-top: 9px;
-    }
-
-    .home__form {
-        width: 779px;
-        height: 75px;
-        display: flex;
-        padding: 0;
-        align-items: center;
-        margin: 44px auto 0 auto;
-    }
-
-    .home__input input {
-        width: 200px;
-    }
-
-    .home__input-choise {
-        margin-left: 23px;
-    }
-
-    .home__input-date {
-        margin-left: 30px;
-    }
-
-    .home__divider {
-        width: 1px;
-        height: 36.922px;
-        margin-left: 14px;
-    }
-
-    .home__btn {
-        margin-top: 0;
-        margin-left: 56px;
-        width: 134px;
-        height: 55px;
-        flex-shrink: 0;
     }
 
     .home__popular {

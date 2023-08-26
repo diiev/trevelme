@@ -1,4 +1,46 @@
 @media (min-width: 1024px) {
-  
+    .popular__cards {
+        grid-template-columns:repeat(3, 220px) ;
+    }
+   .tours__cards {
+    grid-template-columns:repeat(3, 200px) ;
+   } 
+   .home {
+    &__form {
+        width: 779px;
+        height: 75px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        margin: 44px auto 0 auto;
 
+        
+    }
+    &__input {
+        
+        input {
+            width: 200px;
+        }
+        &-choise {
+            margin-left: 23px;
+        }
+        &-date {
+            margin-left:30px;
+        }
+    } 
+    &__divider {
+        width: 1px;
+        height: 36.922px;
+        margin-left: 14px;
+    }
+    &__btn {
+        margin-top: 0;
+        margin-left: 56px;
+        width: 134px;
+        height: 55px;
+        flex-shrink: 0;
+        
+    }
+   }
+   
 }

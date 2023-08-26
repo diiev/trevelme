@@ -1,3 +1,12 @@
 @media (min-width:768px) {
- 
+        .popular__cards {
+            grid-template-columns: 157.452px 157.452px 157.452px;;
+        }
+       .tours__cards {
+        grid-template-columns: 157.31px 157.31px 157.31px;
+       } 
+       .home__btn {
+        width: 300px;
+        margin: 0 auto;
+       }
 }
