@@ -688,6 +688,7 @@ a {
 }
 
 .menu {
+    display: none;
     position: absolute;
     left: 0;
     width: 100%;
