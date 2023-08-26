@@ -10,53 +10,26 @@
 
 __webpack_require__.r(__webpack_exports__);
 const menu = () => {
-  function addPlus(selector) {
-    const menuElem = document.querySelectorAll(selector);
-    menuElem.forEach(item => {
-      if (item.querySelector('ul')) {
-        const span = document.createElement('span');
-        span.classList.add('plus');
-        item.querySelector('a').append(span);
-      }
-    });
-  }
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
+  const close = document.querySelector('.menu__close');
   function showMenu() {
-    const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.menu');
     burger.addEventListener('click', () => {
-      burger.classList.toggle('burger__active');
-      menu.classList.toggle('menu__active');
-      menu.classList.toggle('fade');
+      burger.classList.add('burger__active');
+      menu.classList.add('menu__active');
+      menu.classList.add('fade');
     });
   }
-  function clickMenu() {
-    const links = document.querySelectorAll('.menu a');
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        if (link.querySelector('.plus')) {
-          e.preventDefault();
-          link.querySelector('.plus').classList.toggle('plus__active');
-          if (link.querySelector('.plus').classList.contains('plus__active')) {
-            link.parentNode.querySelector('ul').style.maxHeight = link.parentNode.querySelector('ul').scrollHeight + 80 + 'px';
-            link.parentNode.querySelector('ul').style.opacity = 1;
-            link.parentNode.querySelector('ul').style.visibility = 'visible';
-            link.style.color = '#706056';
-            link.style.fontWeight = '700';
-          } else {
-            link.parentNode.querySelector('ul').style.maxHeight = '0px';
-            link.parentNode.querySelector('ul').style.opacity = 0;
-            link.parentNode.querySelector('ul').style.visibility = 'hidden';
-            link.style.color = '';
-            link.style.fontWeight = '';
-          }
-        }
-      });
+  function closeMenu() {
+    close.addEventListener('click', () => {
+      burger.classList.remove('burger__active');
+      menu.classList.remove('menu__active');
+      menu.classList.remove('fade');
+      menu.classList.add('fadeOut');
     });
   }
-  addPlus('.menu__item');
-  addPlus('.submenu__item');
-  clickMenu();
   showMenu();
+  closeMenu();
 };
 /* harmony default export */ __webpack_exports__["default"] = (menu);
 
@@ -4041,6 +4014,7 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
+  (0,_modules_menu__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_select__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_modules_svg__WEBPACK_IMPORTED_MODULE_3__["default"])();

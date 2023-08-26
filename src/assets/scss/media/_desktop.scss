@@ -7,7 +7,17 @@
         padding: 0;
 
      } 
-    
+      
+     .btn {
+        svg {
+            margin-left: 15.08px;
+            vertical-align: middle;
+            path {
+                transition: all .3s ease-out;
+            }
+        }
+       
+     }
      .header {
       
         .burger {

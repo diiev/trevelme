@@ -53,22 +53,7 @@
         line-height: 25px; /* 166.667% */
         display: none;
         transition: all .3s ease-out;
-        svg {
-            margin-left: 15.08px;
-            vertical-align: middle;
-            path {
-                transition: all .3s ease-out;
-            }
-        }
-        &:hover {
-            background: #000;
-            color: $mainColor;
-            svg {
-                path {
-                    fill: $mainColor;
-                }
-            }
-        }
+      
     }
     &__heart {
         margin-left: auto;

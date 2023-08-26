@@ -47,7 +47,7 @@
 .burger {
     &__active:after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        top: 5px;
         width: 100%;
     }
 }

@@ -7,6 +7,7 @@ import svg from "./modules/svg";
 
 document.addEventListener('DOMContentLoaded', ()=> {
     'use strict';
+      menu();
       select();
       slider();
       svg();
