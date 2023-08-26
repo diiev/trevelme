@@ -506,6 +506,9 @@
   
         .footer { 
             padding-top:  0;
+            &__rectangle {
+                display: block;
+            }
             &__divider {
                 display: none; 
             }

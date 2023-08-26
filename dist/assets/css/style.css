@@ -1631,6 +1631,11 @@ a {
 
 .footer {
     background: #FBFBFB;
+    padding-top: 49.5px;
+}
+
+.footer__rectangle {
+    display: none;
 }
 
 .footer__logo {
@@ -2355,6 +2360,10 @@ a {
 
     .footer {
         padding-top: 0;
+    }
+
+    .footer__rectangle {
+        display: block;
     }
 
     .footer__divider {
