@@ -1,0 +1,53 @@
+.mails {
+    padding-top: 63px;
+    &__wrapper {
+           background: url("../img/mail_bg-m.jpg") center / cover   no-repeat;
+           border-radius: 30px;
+            background-color: #CDE767;
+            padding: 39.1px 40.58px 165px 31.17px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px; /* 150% */
+    
+    }
+    &__subtitle {
+        margin-top: 5px;
+    }
+    &__policy {
+        margin-top: 64.58px;
+        color: #7A7A7A;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; /* 170% */
+        padding: 0 15px 0px 0;
+
+        a {
+            color: #7A7A7A;
+            text-decoration: underline;
+        } 
+      
+    }
+    &__btns {
+        margin-top: 22.5px;
+        display: flex;
+        gap: 13px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.13));
+    }
+    &__btn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background: #FFF; 
+        span {
+            display: none;
+        }
+    }
+    
+}

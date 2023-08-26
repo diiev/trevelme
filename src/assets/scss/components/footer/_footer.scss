@@ -1,0 +1,146 @@
+.footer {
+    padding-top: 49.5px;
+    &__logo {
+        justify-content: center;
+        margin-left: 0;
+        img {
+            width: 43px;
+            height: 43px;
+        }
+        div {
+            font-size: 23px;
+            line-height: 25px;
+        }
+        span {
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+ 
+    &__divider {
+        margin-top: 28.5px;
+    }
+    &__menu {
+       &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 17.33px;
+        
+        &__desk {
+            display: none;
+        }
+      
+       li {
+
+        color: $textcolorMain;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+        margin-bottom: 15px;
+        img {
+            display: none;
+        }
+        a {
+            color: $textcolorMain;
+            font-weight: 400;
+        }
+       }
+      
+       } 
+       &-title {
+        color: $textcolorMain;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 187.5% */
+        margin-bottom: 25.25px;
+       }
+    }
+    &__social {
+        &-btns {
+            margin-top: 16px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        &-btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #DFDFDF;
+        background: #FFF;
+        }
+    }
+    &__textdownload {
+        &-desk {
+            display: none;
+        }
+        margin-top: 24px;;
+        text-align: center;
+        color: $textcolorMain;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 187.5% */
+    }
+    &__downloads {
+        &-desk {
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 14px;
+        margin-left: 34px;
+        &-appstore {
+                img {
+                    width: 120px;
+                    height: 40px;
+                }
+        }
+        &-googleplay {
+            img {
+                width: 135px;
+                height: 40px;
+            }
+        }
+    }
+    &__bottom {
+        margin-top: 25px;
+    }
+    &__copyright {
+        text-align: center;
+        color: $textcolorMain;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__pay {
+        display: none;
+    }
+    &__logo-advance {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #252525;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px; /* 269.231% */
+        img {
+            width: 132.388px;
+            height: 22.065px;
+
+        }
+    }
+}

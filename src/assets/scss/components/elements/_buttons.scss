@@ -29,4 +29,33 @@
            
            }
     }
+    &__slider {
+       
+        display: flex;
+        gap: 14px;
+        .prev, .next {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            flex-shrink: 0;
+            border-radius: 100%;
+            border: 2px solid  #D2D2D2;
+            &::before {
+                // position: absolute;
+                // content: '';
+                // width: 44px;
+                // height: 44px;
+                // border-radius: 100%;
+                // border: 2px solid $textcolorMain;
+                // border-top: none;
+                // border-left: none;
+        
+                
+            }
+        }
+    }
 }

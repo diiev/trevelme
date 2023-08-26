@@ -1,5 +1,7 @@
 .tours {
     padding-top: 67.77px;
+    background: #f9f9f9;
+    padding-bottom: 70.5px;
 
     &__filters {
         margin-top: 33.09px;
@@ -174,6 +176,7 @@
     
     &-hour {
         display: flex;
+        color: $textcolorMain;
         margin: 10.19px auto 0 auto;
         width: 133.291px;
         height: 33.82px;
