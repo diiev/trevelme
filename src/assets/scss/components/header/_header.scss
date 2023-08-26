@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: center;
      
-        img {
+        svg {
             display: block;
             width: 16.358px;
             height: 16.358px;
@@ -52,9 +52,22 @@
         font-weight: 600;
         line-height: 25px; /* 166.667% */
         display: none;
-        img {
+        transition: all .3s ease-out;
+        svg {
             margin-left: 15.08px;
             vertical-align: middle;
+            path {
+                transition: all .3s ease-out;
+            }
+        }
+        &:hover {
+            background: #000;
+            color: $mainColor;
+            svg {
+                path {
+                    fill: $mainColor;
+                }
+            }
         }
     }
     &__heart {

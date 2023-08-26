@@ -626,7 +626,7 @@ a {
     background: #4CAF50;
 }
 
-.btn__whatsapp img {
+.btn__whatsapp svg {
     width: 23px;
     height: 23px;
     margin-right: 11.25px;
@@ -637,7 +637,7 @@ a {
     background: #039BE5;
 }
 
-.btn__telegram img {
+.btn__telegram svg {
     vertical-align: middle;
     margin-right: 18.17px;
 }
@@ -770,12 +770,12 @@ a {
     margin-right: 25px;
 }
 
-.menu .tolip__phone img {
+.menu .tolip__phone svg {
     margin-right: 8px;
     vertical-align: middle;
 }
 
-.menu .tolip__email img {
+.menu .tolip__email svg {
     margin-right: 9px;
     vertical-align: middle;
 }
@@ -844,7 +844,7 @@ a {
     justify-content: center;
 }
 
-.header__heart img {
+.header__heart svg {
     display: block;
     width: 16.358px;
     height: 16.358px;
@@ -875,11 +875,25 @@ a {
     line-height: 25px;
  /* 166.667% */
     display: none;
+    transition: all 0.3s ease-out;
 }
 
-.header__btn img {
+.header__btn svg {
     margin-left: 15.08px;
     vertical-align: middle;
+}
+
+.header__btn svg path {
+    transition: all 0.3s ease-out;
+}
+
+.header__btn:hover {
+    background: #000;
+    color: #FFD600;
+}
+
+.header__btn:hover svg path {
+    fill: #FFD600;
 }
 
 .header__heart {
@@ -1821,7 +1835,7 @@ a {
         height: 50px;
     }
 
-    .header__heart img {
+    .header__heart svg {
         width: 22px;
         height: 22px;
     }

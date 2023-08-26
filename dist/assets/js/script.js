@@ -272,6 +272,37 @@ const slider = () => {
 
 /***/ }),
 
+/***/ "./src/assets/js/modules/svg.js":
+/*!**************************************!*\
+  !*** ./src/assets/js/modules/svg.js ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function svg() {
+  // svg
+  const imgElements = document.querySelectorAll('img.img-svg');
+  imgElements.forEach(img => {
+    const imgClass = img.getAttribute('class');
+    const imgURL = img.getAttribute('src');
+    fetch(imgURL).then(response => response.text()).then(data => {
+      const parser = new DOMParser();
+      const svgElement = parser.parseFromString(data, 'image/svg+xml').querySelector('svg');
+      if (typeof imgClass !== 'undefined') {
+        svgElement.setAttribute('class', `${imgClass} replaced-svg`);
+      }
+      svgElement.removeAttribute('xmlns:a');
+      if (!svgElement.getAttribute('viewBox') && svgElement.getAttribute('height') && svgElement.getAttribute('width')) {
+        svgElement.setAttribute('viewBox', `0 0 ${svgElement.getAttribute('height')} ${svgElement.getAttribute('width')}`);
+      }
+      img.parentNode.replaceChild(svgElement, img);
+    });
+  });
+}
+/* harmony default export */ __webpack_exports__["default"] = (svg);
+
+/***/ }),
+
 /***/ "./node_modules/tiny-slider/dist/tiny-slider.js":
 /*!******************************************************!*\
   !*** ./node_modules/tiny-slider/dist/tiny-slider.js ***!
@@ -4002,6 +4033,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu */ "./src/assets/js/modules/menu.js");
 /* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./src/assets/js/modules/slider.js");
 /* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/select */ "./src/assets/js/modules/select.js");
+/* harmony import */ var _modules_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/svg */ "./src/assets/js/modules/svg.js");
+
 
 
 
@@ -4010,6 +4043,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   (0,_modules_select__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  (0,_modules_svg__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 }();
 /******/ })()
