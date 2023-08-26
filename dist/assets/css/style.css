@@ -1121,7 +1121,13 @@ a {
 }
 
 .home__btn svg {
+    width: 15px;
+    height: 15px;
     margin-right: 11.39px;
+}
+
+.home__btn svg path {
+    fill: #000;
 }
 
 .home__popular {

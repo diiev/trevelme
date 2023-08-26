@@ -51,7 +51,7 @@
           
            
         input {
-            color: #7B7B7B;
+        color: #7B7B7B;
         font-size: 15px;
         font-weight: 500;
         line-height: normal;
@@ -72,7 +72,12 @@
     margin-top: 11.81px;
     height: 55px;
     svg {
+        width: 15px;
+        height: 15px;
         margin-right: 11.39px;
+        path {
+            fill: #000;
+        }
     }
    } 
 
