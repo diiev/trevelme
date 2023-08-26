@@ -687,6 +687,14 @@ a {
     background: #000;
 }
 
+.menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+}
+
 .menu-desk {
     display: none;
     margin-left: 49.92px;
@@ -1143,10 +1151,6 @@ a {
     height: 15px;
     margin-right: -6px;
     transform: rotate(0deg) !important;
-}
-
-.tours__city {
-    margin-top: 26px;
 }
 
 .tours__city-cities {
