@@ -7,27 +7,38 @@
     line-height: normal;
     color: $textcolorMain;
     border-radius:100px;
+    transition: all .3s ease-out;
 
-    
+    &:hover {
+        background: lighten($mainColor,10%)
+    }
 
     &__whatsapp {
         background: #4CAF50;
+        transition: all .3s ease-out;
        svg {
         width: 23px;
         height: 23px;
         margin-right: 11.25px;
         vertical-align: middle;
        
+       } 
+       &:hover {
+        background: darken(#4CAF50, 10%)
        }
     }
     &__telegram {
     
         background: #039BE5;
+        transition: all .3s ease-out;
         svg {
            
             vertical-align: middle;
             margin-right: 18.17px;
            
+           }
+           &:hover {
+            background: darken(#039BE5, 10%)
            }
     }
     &__slider {

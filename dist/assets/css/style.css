@@ -607,10 +607,16 @@ a {
     line-height: normal;
     color: #252525;
     border-radius: 100px;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background: #ffde33;
 }
 
 .btn__whatsapp {
     background: #4CAF50;
+    transition: all 0.3s ease-out;
 }
 
 .btn__whatsapp svg {
@@ -620,13 +626,22 @@ a {
     vertical-align: middle;
 }
 
+.btn__whatsapp:hover {
+    background: #3d8b40;
+}
+
 .btn__telegram {
     background: #039BE5;
+    transition: all 0.3s ease-out;
 }
 
 .btn__telegram svg {
     vertical-align: middle;
     margin-right: 18.17px;
+}
+
+.btn__telegram:hover {
+    background: #0279b3;
 }
 
 .btn__slider {
@@ -1008,6 +1023,14 @@ a {
     display: block;
     width: 16.358px;
     height: 16.358px;
+}
+
+.header__heart svg path {
+    transition: all 0.3s ease-out;
+}
+
+.header__heart:hover svg path {
+    fill: red;
 }
 
 .header__login {
