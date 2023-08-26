@@ -17,7 +17,6 @@ const menu = () => {
     burger.addEventListener('click', () => {
       burger.classList.add('burger__active');
       menu.classList.add('menu__active');
-      menu.classList.add('fade');
     });
   }
   function closeMenu() {
