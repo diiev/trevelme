@@ -978,7 +978,7 @@ a {
     height: 55px;
 }
 
-.home__btn img {
+.home__btn svg {
     margin-right: 11.39px;
 }
 
@@ -1631,7 +1631,6 @@ a {
 
 .footer {
     background: #FBFBFB;
-    padding-top: 49.5px;
 }
 
 .footer__logo {
