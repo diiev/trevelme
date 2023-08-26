@@ -1616,6 +1616,7 @@ a {
 }
 
 .footer {
+    background: #FBFBFB;
     padding-top: 49.5px;
 }
 
@@ -2337,5 +2338,159 @@ a {
         line-height: 19px;
         margin-top: 111.58px;
         padding: 0px 779px 0 0;
+    }
+
+    .footer {
+        padding-top: 0;
+    }
+
+    .footer__divider {
+        display: none;
+    }
+
+    .footer__logo {
+        justify-content: start;
+    }
+
+    .footer__top {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: 226px auto;
+        column-gap: 92px;
+    }
+
+    .footer__textdownload {
+        display: none;
+    }
+
+    .footer__textdownload-desk {
+        margin-top: 47px;
+        display: block;
+        font-size: 15px;
+        line-height: 25px;
+ /* 166.667% */
+        font-style: normal;
+        font-weight: 400;
+        padding: 0 10px 0 0;
+        text-align: left;
+    }
+
+    .footer__downloads {
+        display: none;
+    }
+
+    .footer__downloads-desk {
+        display: flex;
+        margin-left: 0;
+        margin-top: 18px;
+    }
+
+    .footer__downloads-appstore img {
+        width: 101.927px;
+        height: 33.976px;
+    }
+
+    .footer__downloads-googleplay img {
+        width: 114.668px;
+        height: 33.976px;
+    }
+
+    .footer__menu {
+        display: flex;
+    }
+
+    .footer__menu-title {
+        margin-bottom: 20.25px;
+    }
+
+    .footer__menu-items {
+        display: block;
+    }
+
+    .footer__menu-items li {
+        font-size: 14px;
+        line-height: 35px;
+ /* 250% */
+        margin-bottom: 2px;
+    }
+
+    .footer__menu-items li img {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .footer__menu-first {
+        width: 202px;
+    }
+
+    .footer__menu-second {
+        width: 122px;
+        margin-left: 78px;
+    }
+
+    .footer__menu-third {
+        width: 263px;
+        margin-left: 79px;
+        margin-top: 22px;
+    }
+
+    .footer__menu-four {
+        width: 296px;
+        margin-left: 81px;
+    }
+
+    .footer__social-btns {
+        justify-content: start;
+        margin-left: 1px;
+        margin-top: 14px;
+    }
+
+    .footer__phone-img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer__email-img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .footer__pin-img {
+        width: 9px;
+        height: 12px;
+    }
+
+    .footer__bottom {
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__bottom-divider {
+        display: block;
+        margin-top: 81px;
+    }
+
+    .footer__pay {
+        display: block;
+        margin-left: auto;
+    }
+
+    .footer__logo {
+        margin-top: 14px;
+    }
+
+    .footer__logo div {
+        margin-left: 8.6px;
+    }
+
+    .footer__logo span {
+        margin-top: 0;
+        margin-left: -5px;
+    }
+
+    .footer__logo-advance {
+        margin-top: 0;
+        margin-left: 73px;
     }
 }

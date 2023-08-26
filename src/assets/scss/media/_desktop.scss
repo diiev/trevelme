@@ -502,5 +502,143 @@
 
          }
      }
+  
+        .footer { 
+            padding-top:  0;
+            &__divider {
+                display: none; 
+            }
+            &__logo {
+                justify-content: start;
+
+            }
+            &__top {
+                padding-top: 120px;
+                display: grid;
+                grid-template-columns: 226px auto;
+                column-gap: 92px;
+
+            }
+            &__textdownload {
+                display: none;
+                &-desk {
+                    margin-top: 47px;
+                    display: block; 
+                    font-size: 15px;
+                    line-height: 25px; /* 166.667% */
+                    font-style: normal;
+                    font-weight: 400;
+                    padding: 0 10px 0 0;
+                    text-align: left;
+
+                }
+            }
+            &__downloads {
+                display: none;
+                &-desk {
+                    display: flex;
+                    margin-left: 0; 
+                    margin-top: 18px;
  
+                  
+                } 
+                &-appstore {
+                    img {
+                        width: 101.927px;
+                        height: 33.976px;
+                    }
+            }
+            &-googleplay {
+                img {
+                    width: 114.668px;
+                    height: 33.976px;
+                }
+                }
+            }
+            &__menu {
+                display: flex;
+                &-title {
+                    margin-bottom: 20.25px;
+                }
+                &-items {
+                 display: block;
+                 li {
+                    font-size: 14px;
+                    line-height: 35px; /* 250% */ 
+                    margin-bottom: 2px;
+                    img {
+                        display: inline-block;
+                        margin-right: 10px;
+                     }
+                 } 
+               
+              
+                } 
+                &-first {
+                    width: 202px;
+                 
+                 }
+                 &-second {
+                    width: 122px;
+                    margin-left: 78px;
+                 }
+                 &-third {
+                    width: 263px;
+                    margin-left: 79px;
+                    margin-top: 22px;
+                 }
+                 &-four {
+                    width: 296px;
+                    margin-left: 81px;
+
+                 }
+            }
+            &__social {
+                &-btns {
+                    justify-content: start;
+                    margin-left: 1px;
+                    margin-top: 14px;
+                }
+            }
+            &__phone-img {
+                width: 10px;
+                height: 10px;
+            }
+            &__email-img {
+                width: 12px;
+                height: 12px;
+            }
+            &__pin-img {
+                width: 9px;
+                height: 12px;
+            }
+            &__bottom {
+                margin-top: 18px;
+                display: flex;
+                align-items: center;
+               &-divider {
+                display: block; 
+                margin-top: 81px;
+               }
+
+            }
+            &__pay {
+                display: block;
+                margin-left: auto;
+            } 
+            &__logo {
+                margin-top: 14px;
+                div {
+                    margin-left: 8.6px;
+                }
+                span {
+                    margin-top: 0;
+                    margin-left: -5px;
+                }
+                &-advance {
+                    margin-top: 0;
+                    margin-left: 73px;
+                }
+            }
+        }
 }
