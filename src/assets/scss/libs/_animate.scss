@@ -2,18 +2,7 @@
     animation-duration: 1s;
     animation-fill-mode: both
 }
-@keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 70px));
-    }
-  }
-  
-.marquee {
-    animation: scroll 15s linear infinite;
-  }
+
 @keyframes fadeIn {
     from {
         opacity: 0;

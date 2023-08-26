@@ -17,8 +17,7 @@ const menu = () => {
        close.addEventListener('click', ()=> {
         burger.classList.remove('burger__active');
         menu.classList.remove('menu__active');
-        menu.classList.remove('fade');
-        menu.classList.add('fadeOut');
+        
        });
     }
    
