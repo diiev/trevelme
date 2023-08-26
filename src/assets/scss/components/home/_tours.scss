@@ -129,7 +129,7 @@
         right: 7.63px;
         top: 7.55px;
         z-index: 1;
-        img {
+        svg {
             width: 10.372px;
             height: 10.372px;
         }
@@ -210,6 +210,7 @@
             border-radius: 100px;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
     }
   

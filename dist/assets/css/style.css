@@ -1385,7 +1385,7 @@ a {
     z-index: 1;
 }
 
-.tours__card-heart img {
+.tours__card-heart svg {
     width: 10.372px;
     height: 10.372px;
 }
@@ -1475,6 +1475,7 @@ a {
     border-radius: 100px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .tours__btn {
@@ -1694,7 +1695,7 @@ a {
     height: 35.685px;
 }
 
-.blog__slider-btns .prev img, .blog__slider-btns .next img {
+.blog__slider-btns .prev svg, .blog__slider-btns .next svg {
     width: 14.739px;
     height: 14.739px;
 }
@@ -2224,7 +2225,7 @@ a {
         right: 16.19px;
     }
 
-    .tours__card-heart img {
+    .tours__card-heart svg {
         width: 22px;
         height: 22px;
     }
@@ -2459,7 +2460,7 @@ a {
         height: 46px;
     }
 
-    .blog__slider-btns .prev img, .blog__slider-btns .next img {
+    .blog__slider-btns .prev svg, .blog__slider-btns .next svg {
         width: 19px;
         height: 19px;
     }
@@ -2616,7 +2617,7 @@ a {
         margin-bottom: 2px;
     }
 
-    .footer__menu-items li img {
+    .footer__menu-items li svg {
         display: inline-block;
         margin-right: 10px;
     }
