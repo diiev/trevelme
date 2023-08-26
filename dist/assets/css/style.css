@@ -687,33 +687,33 @@ a {
     background: #000;
 }
 
-.menu {
+.menu-desk {
     display: none;
     margin-left: 49.92px;
 }
 
-.menu__items {
+.menu-desk__items {
     display: flex;
     gap: 55.5px;
 }
 
-.menu__item {
+.menu-desk__item {
     position: relative;
 }
 
-.menu__item-arrow {
+.menu-desk__item-arrow {
     margin-left: 5.1px;
     margin-top: 10px;
 }
 
-.menu__link {
+.menu-desk__link {
     color: #252525;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
 }
 
-.menu .tolip {
+.menu-desk .tolip {
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -727,55 +727,55 @@ a {
     padding: 17px 23px 22px 27.08px;
 }
 
-.menu .tolip__wrapper {
+.menu-desk .tolip__wrapper {
     padding-top: 18px;
     position: absolute;
     width: 100%;
 }
 
-.menu .tolip a {
+.menu-desk .tolip a {
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
 }
 
-.menu .tolip__text {
+.menu-desk .tolip__text {
     color: #000;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
 }
 
-.menu .tolip__social {
+.menu-desk .tolip__social {
     margin-top: 14.38px;
     display: flex;
     gap: 14px;
 }
 
-.menu .tolip__btn {
+.menu-desk .tolip__btn {
     width: 162px;
     height: 50px;
     color: #FFF;
 }
 
-.menu .tolip__contacts {
+.menu-desk .tolip__contacts {
     margin-top: 14.62px;
 }
 
-.menu .tolip__contacts a {
+.menu-desk .tolip__contacts a {
     color: #000;
 }
 
-.menu .tolip__phone {
+.menu-desk .tolip__phone {
     margin-right: 25px;
 }
 
-.menu .tolip__phone svg {
+.menu-desk .tolip__phone svg {
     margin-right: 8px;
     vertical-align: middle;
 }
 
-.menu .tolip__email svg {
+.menu-desk .tolip__email svg {
     margin-right: 9px;
     vertical-align: middle;
 }
@@ -1851,11 +1851,11 @@ a {
         margin-left: 20px;
     }
 
-    .menu {
+    .menu-desk {
         display: block;
     }
 
-    .menu__item:hover .tolip {
+    .menu-desk__item:hover .tolip {
         opacity: 1;
         visibility: visible;
         z-index: 99;
