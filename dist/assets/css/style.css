@@ -691,14 +691,15 @@ a {
 
 .menu {
     padding-top: 47px;
-    display: none;
+    opacity: 0;
     position: absolute;
+    z-index: -999;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0%;
     background: #fff;
-    z-index: 999;
+    transition: all 0.3s ease-out;
 }
 
 .menu__header {
@@ -859,7 +860,10 @@ a {
 }
 
 .menu__active {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    height: 100%;
 }
 
 .menu-desk {
@@ -1315,6 +1319,10 @@ a {
     height: 15px;
     margin-right: -6px;
     transform: rotate(0deg) !important;
+}
+
+.tours__city > .itc-select__dropdown {
+    top: 70px;
 }
 
 .tours__city-cities {

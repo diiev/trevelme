@@ -7,6 +7,7 @@ const menu = () => {
         burger.addEventListener('click', ()=> {
                 burger.classList.add('burger__active');
                 menu.classList.add('menu__active');
+             
             
                
         });
