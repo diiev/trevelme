@@ -45,8 +45,12 @@
         align-items: center;
         border-radius: 9px;
         background: #FFF; 
+        transition: all .3s ease-out;
         span {
             display: none;
+        }
+        &:hover {
+            background: darken(#fff, 4%)
         }
     }
     

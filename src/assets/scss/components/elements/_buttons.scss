@@ -8,9 +8,12 @@
     color: $textcolorMain;
     border-radius:100px;
     transition: all .3s ease-out;
+    cursor: pointer;
 
     &:hover {
-        background: lighten($mainColor,10%)
+      
+       background: lighten($mainColor, 10%);
+       
     }
 
     &__whatsapp {
@@ -56,17 +59,14 @@
             flex-shrink: 0;
             border-radius: 100%;
             border: 2px solid  #D2D2D2;
+            transition: all .3s ease-out;
             &::before {
-                // position: absolute;
-                // content: '';
-                // width: 44px;
-                // height: 44px;
-                // border-radius: 100%;
-                // border: 2px solid $textcolorMain;
-                // border-top: none;
-                // border-left: none;
-        
-                
+                transition: all .3s ease-out;
+            }
+            &:hover {
+
+                // border-bottom-color: $textcolorMain;
+                // border-right-color: $textcolorMain;
             }
         }
     }

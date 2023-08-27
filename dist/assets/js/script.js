@@ -217,7 +217,9 @@ const slider = () => {
     controls: true,
     controlsContainer: ".feedback__slider-btns",
     autoplay: true,
-    autoplayButtonOutput: false
+    autoplayButtonOutput: false,
+    "autoplayHoverPause": true,
+    "autoplayTimeout": 3500
   });
   const sliderBlog = (0,tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns)({
     container: '.blog__slider',
@@ -229,6 +231,8 @@ const slider = () => {
     controlsContainer: ".blog__slider-btns",
     autoplay: true,
     autoplayButtonOutput: false,
+    "autoplayHoverPause": true,
+    "autoplayTimeout": 3500,
     responsive: {
       1440: {
         "fixedWidth": 326.997,

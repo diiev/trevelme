@@ -608,6 +608,7 @@ a {
     color: #252525;
     border-radius: 100px;
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -660,6 +661,11 @@ a {
     flex-shrink: 0;
     border-radius: 100%;
     border: 2px solid #D2D2D2;
+    transition: all 0.3s ease-out;
+}
+
+.btn__slider .prev::before, .btn__slider .next::before {
+    transition: all 0.3s ease-out;
 }
 
 .logo {
@@ -1801,10 +1807,15 @@ a {
     align-items: center;
     border-radius: 9px;
     background: #FFF;
+    transition: all 0.3s ease-out;
 }
 
 .mails__btn span {
     display: none;
+}
+
+.mails__btn:hover {
+    background: whitesmoke;
 }
 
 .footer {
@@ -1896,6 +1907,11 @@ a {
     border-radius: 5px;
     border: 1px solid #DFDFDF;
     background: #FFF;
+    transition: all 0.3s ease-out;
+}
+
+.footer__social-btn:hover {
+    border-color: #FFD600;
 }
 
 .footer__textdownload {

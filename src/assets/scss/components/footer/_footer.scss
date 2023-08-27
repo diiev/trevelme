@@ -79,6 +79,10 @@
         border-radius: 5px;
         border: 1px solid #DFDFDF;
         background: #FFF;
+        transition: all .3s ease-out;
+        &:hover {
+            border-color: $mainColor;
+        }
         }
     }
     &__textdownload {
