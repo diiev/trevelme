@@ -766,6 +766,7 @@ a {
     font-weight: 600;
     line-height: 25px;
  /* 166.667% */
+    cursor: pointer;
 }
 
 .menu__search {
@@ -1058,7 +1059,14 @@ a {
     line-height: 25px;
  /* 208.333% */
     border-radius: 100px;
+    transition: all 0.3s ease-out;
     background: #F5F5F5;
+    cursor: pointer;
+}
+
+.header__login:hover {
+    background: #FFD600;
+    color: #fff;
 }
 
 .header__btn {
